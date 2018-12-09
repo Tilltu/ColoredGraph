@@ -40,7 +40,7 @@ void  print(int vex_num, int adj_matrix[MaxLen][MaxLen]){
  * Method:    MapPrint
  * Signature: ([I)V
  */
-JNIEXPORT void JNICALL Java_Input_MapPrint
+JNIEXPORT jint JNICALL Java_Input_MapPrint
   (JNIEnv *env, jclass class_, jintArray adj_matrix) {
 
      //printf("[ Receiving Data From Java ]");
@@ -78,7 +78,7 @@ JNIEXPORT void JNICALL Java_Input_MapPrint
 
 	PaintMap pmap(vex_num, m);
 	pmap.paintColor();
-	pmap.display();
+	//pmap.display();
 
 
 
@@ -89,6 +89,6 @@ JNIEXPORT void JNICALL Java_Input_MapPrint
 
      env->ReleaseIntArrayElements(adj_matrix, receivedint, 0);
 
-     return;
+     return (jint) pmap.getColorNum();
 
 }

@@ -10,9 +10,9 @@ extern "C" {
 /*
  * Class:     Input
  * Method:    MapPrint
- * Signature: ([I)V
+ * Signature: ([I)I
  */
-JNIEXPORT void JNICALL Java_Input_MapPrint
+JNIEXPORT jint JNICALL Java_Input_MapPrint
   (JNIEnv *, jclass, jintArray);
 
 #ifdef __cplusplus

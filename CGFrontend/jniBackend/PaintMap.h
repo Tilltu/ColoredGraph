@@ -89,4 +89,8 @@ public:
             std::cout << "第" << (i+1) << "个点为第" << colors[i] << "种颜色" << std::endl;
         }
     }
+
+    int getColorNum() {
+      return this->colorNum;
+    }
 } ;
