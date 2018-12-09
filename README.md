@@ -20,6 +20,7 @@ c). cd ColoredGraph
 Step5:
 （可选）
 打开IDEA，打开ColoredGraph目录，在File -- Setting 中的Tools中设置External Tools添加两个Tools
+
 1）GenerateHeader
 Program: /usr/bin/javah
 Arguments: -jni -classpath $OutputPath$ -d ./CGFrontend/jniBackend $FileClass$
