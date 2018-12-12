@@ -34,22 +34,22 @@ JNICALL Java_Input_MapPrint
     jboolean isCopy = TRUE;
 
     jint * receivedint = env->GetIntArrayElements(adj_matrix, &isCopy);
-    int vex_num = (int) env->GetArrayLength(adj_matrix);
+    INT32 vex_num = (INT32) env->GetArrayLength(adj_matrix);
     vex_num = sqrt(vex_num);
     //printf("[ Receiving Data From Java ]");
 
-    int i, j;
+    INT32 i, j;
 
-    int **matrix;
-    matrix = new int *[vex_num];
+    INT32 **matrix;
+    matrix = new INT32 *[vex_num];
     for (i = 0; i < vex_num; i++) {
-        matrix[i] = new int[vex_num];
+        matrix[i] = new INT32[vex_num];
     }
 
-    int flag = 0;
+    INT32 flag = 0;
     for (i = 0; i < vex_num; i++) {
         for (j = i; j < (i + vex_num); j++) {
-            matrix[i][j % vex_num] = (int) receivedint[flag++];
+            matrix[i][j % vex_num] = (INT32) receivedint[flag++];
         }
     }
 
@@ -62,7 +62,7 @@ JNICALL Java_Input_MapPrint
 
 
     //int i, j;
-    int m[MaxLen][MaxLen];
+    INT32 m[MaxLen][MaxLen];
 
     for (i = 0; i < vex_num; i++) {
         for (j = 0; j < vex_num; j++) {

@@ -38,17 +38,18 @@ using namespace std;
 //**********************************************//
 
 
-string to_string(int a) {
-    ostringstream ostr;
-    ostr << a;
-    string astr = ostr.str();
-    //cout << astr <<endl;
-    return astr;
+string to_string(INT32 a)
+{
+   ostringstream ostr;
+   ostr << a;
+   string astr = ostr.str();
+   //cout << astr <<endl;
+   return astr ;
 }
 
 
 
-const int MaxLen = 20;
+const INT32 MaxLen = 20;
 
 
 class Color {
@@ -73,7 +74,7 @@ Color colornode[10];
 
 
 void resetIfOccupied() {
-    int i;
+    INT32 i;
 
     for (i = 0; i < 10; i++) {
         colornode[i].occupied = false;
@@ -81,15 +82,15 @@ void resetIfOccupied() {
 }
 
 void occupyExistingColor(string inputcolor) {
-    for (int i = 0; i < 10; i++) {
+    for (INT32 i = 0; i < 10; i++) {
         if (inputcolor == colornode[i].color) {
             colornode[i].setoccupied();
         }
     }
 }
 
-int getNearestColor() {
-    for (int i = 0; i < 10; i++) {
+INT32 getNearestColor() {
+    for (INT32 i = 0; i < 10; i++) {
         if (!colornode[i].occupied) {
             return i;
         }
@@ -111,16 +112,16 @@ public:
 class PaintMap {
 
 protected:
-    int matrix[MaxLen][MaxLen];  //邻接矩阵，0表示不连接，1表示连接
-    int colors[MaxLen];          //颜色数组，表示每个点的着色情况，0为未着色，n表示着第n种颜色
+    INT32 matrix[MaxLen][MaxLen];  //邻接矩阵，0表示不连接，1表示连接
+    INT32 colors[MaxLen];          //颜色数组，表示每个点的着色情况，0为未着色，n表示着第n种颜色
     Vertex vertices[MaxLen];      //vertex array
-    int vexNum;                  //图的点数
-    int colorNum;                //最小着色数
-    vector <string> counter;
+    INT32 vexNum;                  //图的点数
+    INT32 colorNum;                //最小着色数
+    vector<string> counter;
 
 public:
-    PaintMap(int vnum, int mat[][MaxLen]) {
-        int i, j;
+    PaintMap(INT32 vnum, INT32 mat[][MaxLen]) {
+        INT32 i, j;
         vexNum = vnum;
 
         for (i = 0; i < vexNum; i++) {
@@ -139,7 +140,7 @@ public:
     }
 
 
-    string getVexColor(int index) {
+    string getVexColor(INT32 index) {
         return vertices[index].color;
     }
 
@@ -157,7 +158,8 @@ public:
         colornode[9].color = "pink";
 
 
-        int i, j;
+        INT32 i, j;
+
 
 
         vertices[0].color = colornode[0].color;
@@ -180,14 +182,14 @@ public:
         }
 
         cout << "[ The Chromatic Number Is ] : " << counter.size() << endl;
-        colorNum = static_cast<int> (counter.size());
+        colorNum = static_cast<INT32> (counter.size());
 
         string result = "";
 
         for (i = 0; i < vexNum; i++) {
-            string portion = "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
+            string portion =  "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
             //cout << portion;
-            result += portion;
+            result+=portion;
         }
 
         cout << result;
@@ -198,7 +200,7 @@ public:
 
 
     bool isColorInCounter(string color) {
-        int i;
+        INT32 i;
         if (counter.size() == 0) {
             return false;
         }
@@ -214,7 +216,7 @@ public:
 
 
     void display() {
-        int i, j;
+        INT32 i, j;
 
         cout << "矩阵为：" << endl;
         for (i = 0; i < vexNum; i++) {
