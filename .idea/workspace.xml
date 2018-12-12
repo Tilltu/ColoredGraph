@@ -11,11 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="378c3f5a-5606-422e-baef-877c556da027" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/lib/libPrint.so" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/lib/libPrint.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input$COLOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input$COLOR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGFrontend/src/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/src/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ColoredGraph.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/out/production/ColoredGraph/Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Input.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,23 +68,26 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="19" />
-          <entry key="cpp" value="1079" />
-          <entry key="h" value="78" />
-          <entry key="java" value="2731" />
+          <entry key="cpp" value="1173" />
+          <entry key="h" value="1503" />
+          <entry key="java" value="2779" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C++" value="1170" />
-          <entry key="JAVA" value="2731" />
-          <entry key="ObjectiveC" value="6" />
+          <entry key="C++" value="1429" />
+          <entry key="JAVA" value="2779" />
+          <entry key="ObjectiveC" value="1266" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,33 +95,28 @@
           <entry key="class" value="8" />
           <entry key="cpp" value="8" />
           <entry key="h" value="13" />
-          <entry key="iml" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="iml" value="2" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="20" />
           <entry key="CLASS" value="8" />
-          <entry key="IDEA_MODULE" value="1" />
+          <entry key="IDEA_MODULE" value="2" />
           <entry key="ObjectiveC" value="1" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="132" column="75" selection-start-line="132" selection-start-column="75" selection-end-line="132" selection-end-column="104" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -126,16 +125,16 @@
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            <state relative-caret-position="350">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -143,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+            <state relative-caret-position="3435">
+              <caret line="239" column="2" selection-start-line="239" selection-start-column="2" selection-end-line="239" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -157,6 +156,8 @@
       <find>8</find>
       <find>10</find>
       <find>library</find>
+      <find>C</find>
+      <find>c++</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,7 +168,6 @@
       <list>
         <option value="$PROJECT_DIR$/frontend/Input.java" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/jni/Hello.cpp" />
         <option value="$PROJECT_DIR$/jni/Input.h" />
         <option value="$PROJECT_DIR$/frontend/jni/Hello.c" />
@@ -181,6 +181,9 @@
         <option value="$PROJECT_DIR$/frontend/jni/Print.cpp" />
         <option value="$PROJECT_DIR$/frontend/jniBackend/Print.cpp" />
         <option value="$PROJECT_DIR$/CGFrontend/src/Input.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" />
+        <option value="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" />
       </list>
     </option>
   </component>
@@ -201,18 +204,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="ColoredGraph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ColoredGraph" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
@@ -262,17 +259,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544370770625" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544598877216" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
@@ -325,6 +323,7 @@
       <workItem from="1544248392365" duration="641000" />
       <workItem from="1544249952471" duration="13295000" />
       <workItem from="1544287361832" duration="15932000" />
+      <workItem from="1544409130943" duration="756000" />
     </task>
     <servers />
   </component>
@@ -334,7 +333,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32227000" />
+    <option name="totallyTimeSpent" value="43988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +345,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
+    <frame x="-1" y="-35" width="1922" height="1116" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -354,20 +353,20 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2746426" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20757738" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32860824" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.28479382" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.27706185" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.37575758" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32969698" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.33034825" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298969" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -398,17 +397,33 @@
     <entry file="file://$PROJECT_DIR$/out/production/ColoredGraph/Input.class" />
     <entry file="file://$PROJECT_DIR$/jni/Hello.cpp" />
     <entry file="file://$PROJECT_DIR$/jni/Input.h" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/frontend/jni/ColoredGraph.cpp" />
+    <entry file="file://$PROJECT_DIR$/frontend/Input.h" />
+    <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/Input.h" />
+    <entry file="file://$PROJECT_DIR$/backend/Hello.cpp" />
+    <entry file="file://$PROJECT_DIR$/backend/print.cpp" />
+    <entry file="file://$PROJECT_DIR$/backend/PaintMap.h" />
+    <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="250" column="57" selection-start-line="250" selection-start-column="57" selection-end-line="250" selection-end-column="57" />
+        <state relative-caret-position="15">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/ColoredGraph.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -419,55 +434,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="110" selection-end-line="8" selection-end-column="10" />
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/ColoredGraph.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/jni/ColoredGraph.cpp" />
-    <entry file="file://$PROJECT_DIR$/frontend/Input.h" />
-    <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/Input.h" />
-    <entry file="file://$PROJECT_DIR$/backend/Hello.cpp" />
-    <entry file="file://$PROJECT_DIR$/backend/print.cpp" />
-    <entry file="file://$PROJECT_DIR$/backend/PaintMap.h" />
-    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        <state relative-caret-position="1188">
+          <caret line="299" column="18" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3435">
+          <caret line="239" column="2" selection-start-line="239" selection-start-column="2" selection-end-line="239" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="132" column="75" selection-start-line="132" selection-start-column="75" selection-end-line="132" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -10,87 +10,229 @@
 
 
 #include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
 
-//using namespace std;
+typedef int INT32;
+
+#define  ERROR         1;
+#define  OK            0;
+#define  NOTFOUND      -1;
+#define  FOUND         1;
+#define  error         false;
+#define  ok            true;
+#define  Is_Print(a, b) if(a) printf b;
+#define  If_Choose(a, b, c) a ? printf b : printf c;
+#define  If_CChoose(a, b, c) a ? cout << b << endl : cout << c << endl;
+#define  Is_Cout(a, b) if(a) cout<< b << endl;
+
+using namespace std;
+
+
+//**********************************************//
+//** 本题可用贪心算法解决，即用一种颜色尽可能 **//
+//** 多的对所有不相邻的点进行着色，然后换另一 **//
+//** 种颜色，直至所有点都着色为止。本题的图为 **//
+//** 邻接矩阵                                 **//
+//**********************************************//
+
+
+string to_string(int a) {
+    ostringstream ostr;
+    ostr << a;
+    string astr = ostr.str();
+    //cout << astr <<endl;
+    return astr;
+}
+
+
 
 const int MaxLen = 20;
 
-class PaintMap{
+
+class Color {
+public:
+    string color;
+    bool occupied;
+
+    Color() {
+        occupied = false;
+    }
+
+    void setColor(string color) {
+        this->color = color;
+    }
+
+    void setoccupied() {
+        occupied = true;
+    }
+};
+
+Color colornode[10];
+
+
+void resetIfOccupied() {
+    int i;
+
+    for (i = 0; i < 10; i++) {
+        colornode[i].occupied = false;
+    }
+}
+
+void occupyExistingColor(string inputcolor) {
+    for (int i = 0; i < 10; i++) {
+        if (inputcolor == colornode[i].color) {
+            colornode[i].setoccupied();
+        }
+    }
+}
+
+int getNearestColor() {
+    for (int i = 0; i < 10; i++) {
+        if (!colornode[i].occupied) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+class Vertex {
+public:
+    string name;
+    string color;
+
+    Vertex() {
+        color = "null";
+    }
+};
+
+
+class PaintMap {
 
 protected:
     int matrix[MaxLen][MaxLen];  //邻接矩阵，0表示不连接，1表示连接
     int colors[MaxLen];          //颜色数组，表示每个点的着色情况，0为未着色，n表示着第n种颜色
+    Vertex vertices[MaxLen];      //vertex array
     int vexNum;                  //图的点数
     int colorNum;                //最小着色数
+    vector <string> counter;
+
 public:
-    PaintMap(int vnum,int mat[][MaxLen]){
-        int i,j;
+    PaintMap(int vnum, int mat[][MaxLen]) {
+        int i, j;
         vexNum = vnum;
 
-        for(i=0;i<vexNum;i++){
-            for(j=0;j<vexNum;j++)
+        for (i = 0; i < vexNum; i++) {
+            for (j = 0; j < vexNum; j++)
                 matrix[i][j] = mat[i][j];
             colors[i] = 0;      //颜色数组初始化，0表示没有着色
         }
-    }
-    bool isOk(int index,int nowColor){  //判断该点是否可以进行着色
-        int i;
-        //出于可能为有向图，用 matrix[index][i] == 1 || matrix[i][index] == 1
-        for(i=0;i<vexNum;i++){
-            if((matrix[index][i] == 1 || matrix[i][index] == 1) && colors[i] == nowColor && index!=i) //与该点相邻的点颜色为要着的颜色,则该点不能进行着色
-                return false;
-        }
-        return true;
-    }
-    void paintColor(){
-        int i,nowColor;
-        bool  flag = true;   //判断是否还有未着色的点，若都已着色，则flag为false
-        colors[0] = 1; //第一个点着色为第一种颜色
-        nowColor = 0;  //目前要着的颜色
 
-        while(flag){
-            nowColor++;     //每一次循环就着一种颜色
-
-            for(i=0;i<vexNum;i++){  //对所有点进行判断，符合条件则着色
-                if(colors[i]!=0)  //该点已着色
-                    continue;
-                else{
-                    if(isOk(i,nowColor))
-                        colors[i] = nowColor;
+        for (i = 0; i < vexNum; i++) {
+            for (j = 0; j < vexNum; j++) {
+                if (matrix[i][j] == 1) {
+                    matrix[j][i] = 1;
                 }
             }
-
-            for(i=0;i<vexNum;i++){
-                if(colors[i] == 0)   //还有点未着色
-                    break;
-            }
-
-            if(i == vexNum){   //全部着色
-                colorNum = nowColor;
-                flag = false;
-            }
-
         }
     }
-    void display(){
-        int i,j;
 
-        std::cout << "矩阵为：" << std::endl;
-        for(i=0;i<vexNum;i++){
-            for(j=0;j<vexNum;j++)
-                std::cout << matrix[i][j] << " ";
-            std::cout << std::endl;
+
+    string getVexColor(int index) {
+        return vertices[index].color;
+    }
+
+
+    string coloring() {
+        colornode[0].color = "green";
+        colornode[1].color = "red";
+        colornode[2].color = "blue";
+        colornode[3].color = "yellow";
+        colornode[4].color = "orange";
+        colornode[5].color = "black";
+        colornode[6].color = "white";
+        colornode[7].color = "brown";
+        colornode[8].color = "grey";
+        colornode[9].color = "pink";
+
+
+        int i, j;
+
+
+        vertices[0].color = colornode[0].color;
+        counter.push_back(vertices[0].color);
+        for (i = 1; i < vexNum; i++) {
+            for (j = 0; j < vexNum; j++) {
+                if (matrix[i][j] == 1) {
+                    string res = getVexColor(j);
+                    if (res != "null") {
+                        occupyExistingColor(res);
+                    }
+
+                }
+            }
+            vertices[i].color = colornode[getNearestColor()].color;
+            if (!isColorInCounter(vertices[i].color)) {
+                counter.push_back(vertices[i].color);
+            }
+            resetIfOccupied();
         }
 
-        std::cout << "最小着色数为：" << colorNum << std::endl;
+        cout << "[ The Chromatic Number Is ] : " << counter.size() << endl;
+        colorNum = static_cast<int> (counter.size());
 
-        std::cout << "着色情况为：" << std::endl;
-        for(i=0;i<vexNum;i++){
-            std::cout << "第" << (i+1) << "个点为第" << colors[i] << "种颜色" << std::endl;
+        string result = "";
+
+        for (i = 0; i < vexNum; i++) {
+            string portion = "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
+            //cout << portion;
+            result += portion;
+        }
+
+        cout << result;
+
+        return result;
+
+    }
+
+
+    bool isColorInCounter(string color) {
+        int i;
+        if (counter.size() == 0) {
+            return false;
+        }
+
+        for (i = 0; i < counter.size(); i++) {
+            if (color == counter[i]) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+    void display() {
+        int i, j;
+
+        cout << "矩阵为：" << endl;
+        for (i = 0; i < vexNum; i++) {
+            for (j = 0; j < vexNum; j++)
+                cout << matrix[i][j] << " ";
+            cout << endl;
+        }
+
+        cout << "最小着色数为：" << colorNum << endl;
+
+        cout << "着色情况为：" << endl;
+        for (i = 0; i < vexNum; i++) {
+            cout << "第" << (i + 1) << "个点为第" << colors[i] << "种颜色" << endl;
         }
     }
+
 
     int getColorNum() {
-      return this->colorNum;
+        return this->colorNum;
     }
-} ;
+};

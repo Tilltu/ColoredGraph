@@ -16,23 +16,8 @@
 #include "PaintMap.h"
 
 
-//using namespace std;
+using namespace std;
 
-void  print(int vex_num, int adj_matrix[MaxLen][MaxLen]){
-	int i, j;
-	int matrix[MaxLen][MaxLen];
-
-	for (i = 0;i < vex_num;i++) {
-	   for (j = 0;j < vex_num;j++) {
-	      matrix[i][j] = adj_matrix[i][j];
-	   }
-	}
-
-	PaintMap pmap(vex_num, matrix);
-	pmap.paintColor();
-	pmap.display();
-
-}
 
 
 /*
@@ -40,55 +25,65 @@ void  print(int vex_num, int adj_matrix[MaxLen][MaxLen]){
  * Method:    MapPrint
  * Signature: ([I)V
  */
-JNIEXPORT jint JNICALL Java_Input_MapPrint
-  (JNIEnv *env, jclass class_, jintArray adj_matrix) {
+JNIEXPORT jint
 
-     //printf("[ Receiving Data From Java ]");
-     jboolean isCopy = TRUE;
+JNICALL Java_Input_MapPrint
+        (JNIEnv *env, jclass class_, jintArray adj_matrix) {
 
-     jint* receivedint = env->GetIntArrayElements(adj_matrix, &isCopy);
-     int vex_num = (int) env->GetArrayLength(adj_matrix);
-     vex_num = sqrt(vex_num);
-     //printf("[ Receiving Data From Java ]");
+    //printf("[ Receiving Data From Java ]");
+    jboolean isCopy = TRUE;
 
-     int i, j;
+    jint * receivedint = env->GetIntArrayElements(adj_matrix, &isCopy);
+    int vex_num = (int) env->GetArrayLength(adj_matrix);
+    vex_num = sqrt(vex_num);
+    //printf("[ Receiving Data From Java ]");
 
-     int **matrix;
-     matrix = new int*[vex_num];
-     for (i = 0;i < vex_num;i++) {
+    int i, j;
+
+    int **matrix;
+    matrix = new int *[vex_num];
+    for (i = 0; i < vex_num; i++) {
         matrix[i] = new int[vex_num];
-     }
+    }
 
-     for (i = 0; i < vex_num; i++) {
-        for (j = i;j < (i + vex_num);j++) {
-           matrix[i][j % vex_num] = (int) receivedint[j];
+    int flag = 0;
+    for (i = 0; i < vex_num; i++) {
+        for (j = i; j < (i + vex_num); j++) {
+            matrix[i][j % vex_num] = (int) receivedint[flag++];
         }
-     }
+    }
 
+    for (i = 0; i < vex_num; i++) {
+        for (j = 0; j < vex_num; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
 
 
     //int i, j;
-	int m[MaxLen][MaxLen];
+    int m[MaxLen][MaxLen];
 
-	for (i = 0;i < vex_num;i++) {
-	   for (j = 0;j < vex_num;j++) {
-	      m[i][j] = matrix[i][j];
-	   }
-	}
+    for (i = 0; i < vex_num; i++) {
+        for (j = 0; j < vex_num; j++) {
+            m[i][j] = matrix[i][j];
+        }
+    }
 
-	PaintMap pmap(vex_num, m);
-	pmap.paintColor();
-	//pmap.display();
+    PaintMap pmap(vex_num, m);
+    pmap.coloring();
+    //pmap.display();
 
 
 
-     for(i = 0;i < vex_num;i++) {
+    for (i = 0; i < vex_num; i++) {
         delete[] matrix[i];
-     }
-     delete matrix;
+    }
+    delete matrix;
 
-     env->ReleaseIntArrayElements(adj_matrix, receivedint, 0);
+    env->ReleaseIntArrayElements(adj_matrix, receivedint, 0);
 
-     return (jint) pmap.getColorNum();
+    return (jint)
+    pmap.getColorNum();
 
 }
