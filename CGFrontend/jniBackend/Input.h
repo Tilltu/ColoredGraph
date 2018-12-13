@@ -7,12 +7,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+#undef Input_MAXLEN
+#define Input_MAXLEN 20L
 /*
  * Class:     Input
- * Method:    MapPrint
- * Signature: ([I)I
+ * Method:    getColorInfo
+ * Signature: ([I)Ljava/lang/String;
  */
-JNIEXPORT jint JNICALL Java_Input_MapPrint
+JNIEXPORT jstring JNICALL Java_Input_getColorInfo
   (JNIEnv *, jclass, jintArray);
 
 #ifdef __cplusplus

@@ -11,6 +11,9 @@
 
 #include <iostream>
 #include <jni.h>
+#include <string>
+#include <string.h>
+#include <memory>
 #include <math.h>
 #include "Input.h"
 #include "PaintMap.h"
@@ -18,25 +21,21 @@
 
 using namespace std;
 
-
+static string result;
 
 /*
  * Class:     Input
- * Method:    MapPrint
- * Signature: ([I)V
+ * Method:    getColorInfo
+ * Signature: ([I)Ljava/lang/String;
  */
-JNIEXPORT jint
-
-JNICALL Java_Input_MapPrint
+JNIEXPORT jstring JNICALL Java_Input_getColorInfo
         (JNIEnv *env, jclass class_, jintArray adj_matrix) {
 
-    //printf("[ Receiving Data From Java ]");
     jboolean isCopy = TRUE;
 
     jint * receivedint = env->GetIntArrayElements(adj_matrix, &isCopy);
     INT32 vex_num = (INT32) env->GetArrayLength(adj_matrix);
     vex_num = sqrt(vex_num);
-    //printf("[ Receiving Data From Java ]");
 
     INT32 i, j;
 
@@ -48,8 +47,8 @@ JNICALL Java_Input_MapPrint
 
     INT32 flag = 0;
     for (i = 0; i < vex_num; i++) {
-        for (j = i; j < (i + vex_num); j++) {
-            matrix[i][j % vex_num] = (INT32) receivedint[flag++];
+        for (j = 0; j <  vex_num; j++) {
+            matrix[i][j] = (INT32) receivedint[flag++];
         }
     }
 
@@ -61,7 +60,6 @@ JNICALL Java_Input_MapPrint
     }
 
 
-    //int i, j;
     INT32 m[MaxLen][MaxLen];
 
     for (i = 0; i < vex_num; i++) {
@@ -71,8 +69,7 @@ JNICALL Java_Input_MapPrint
     }
 
     PaintMap pmap(vex_num, m);
-    pmap.coloring();
-    //pmap.display();
+    string result = pmap.coloring();
 
 
 
@@ -83,7 +80,17 @@ JNICALL Java_Input_MapPrint
 
     env->ReleaseIntArrayElements(adj_matrix, receivedint, 0);
 
-    return (jint)
-    pmap.getColorNum();
+
+   result = to_string(pmap.getColorNum()) + "-" + result;
+   //cout << "[ RESULT IS ]   " << result << endl;
+   const char * res = result.c_str();
+   //cout << "[ RES IS ]      " << res << endl;
+   jstring rtstr = env->NewStringUTF(res);
+   return rtstr;
+
+
 
 }
+
+
+

@@ -29,6 +29,7 @@ typedef int INT32;
 
 using namespace std;
 
+const INT32 MaxLen = 10;
 
 //**********************************************//
 //** 本题可用贪心算法解决，即用一种颜色尽可能 **//
@@ -49,7 +50,7 @@ string to_string(INT32 a)
 
 
 
-const INT32 MaxLen = 20;
+
 
 
 class Color {
@@ -152,8 +153,8 @@ public:
         colornode[3].color = "yellow";
         colornode[4].color = "orange";
         colornode[5].color = "black";
-        colornode[6].color = "white";
-        colornode[7].color = "brown";
+        colornode[6].color = "cyan";
+        colornode[7].color = "magenta";
         colornode[8].color = "grey";
         colornode[9].color = "pink";
 
@@ -187,12 +188,19 @@ public:
         string result = "";
 
         for (i = 0; i < vexNum; i++) {
-            string portion =  "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
-            //cout << portion;
+            //string portion =  "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
+            string portion;
+
+            if (i != vexNum - 1) {
+              portion = to_string(i + 1) + "-" + vertices[i].color + "-";
+            } else {
+              portion = to_string(i + 1) + "-" + vertices[i].color;
+            }
+
             result+=portion;
         }
 
-        cout << result;
+        //cout << result;
 
         return result;
 

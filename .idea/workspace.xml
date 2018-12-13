@@ -9,10 +9,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378c3f5a-5606-422e-baef-877c556da027" name="Default Changelist" comment="Modified Algorithm">
+    <list default="true" id="378c3f5a-5606-422e-baef-877c556da027" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/Input.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/lib/libPrint.so" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/lib/libPrint.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input$COLOR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/src/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/src/Input.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,48 +67,50 @@
     <session id="-1519936014">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="19" />
-          <entry key="cpp" value="1174" />
-          <entry key="h" value="1509" />
-          <entry key="java" value="2779" />
-          <entry key="txt" value="22" />
+          <entry key="cpp" value="1959" />
+          <entry key="h" value="1583" />
+          <entry key="java" value="6374" />
+          <entry key="txt" value="84" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C++" value="1429" />
-          <entry key="JAVA" value="2779" />
-          <entry key="ObjectiveC" value="1273" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="C++" value="2285" />
+          <entry key="JAVA" value="6374" />
+          <entry key="ObjectiveC" value="1276" />
+          <entry key="PLAIN_TEXT" value="84" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="8" />
+          <entry key="class" value="11" />
           <entry key="cpp" value="9" />
-          <entry key="h" value="13" />
+          <entry key="h" value="15" />
           <entry key="iml" value="2" />
-          <entry key="xml" value="8" />
+          <entry key="log" value="1" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C++" value="21" />
-          <entry key="CLASS" value="8" />
+          <entry key="C++" value="23" />
+          <entry key="CLASS" value="11" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="ObjectiveC" value="1" />
-          <entry key="XML" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -113,22 +120,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
+                <element signature="method#visitColor#0;class#Input#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -136,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2304">
-              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="345">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -145,53 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/ColoredGraph.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="241" column="18" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="18" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -228,9 +179,9 @@
         <option value="$PROJECT_DIR$/backend/print.cpp" />
         <option value="$PROJECT_DIR$/frontend/jni/Print.cpp" />
         <option value="$PROJECT_DIR$/frontend/jniBackend/Print.cpp" />
-        <option value="$PROJECT_DIR$/CGFrontend/src/Input.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" />
+        <option value="$PROJECT_DIR$/CGFrontend/src/Input.java" />
         <option value="$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp" />
       </list>
     </option>
@@ -317,9 +268,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/parallels/ColoredGraph/CGFrontend/jniBackend/PaintMap.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544601747091" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544712257369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -377,6 +329,7 @@
       <workItem from="1544249952471" duration="13295000" />
       <workItem from="1544287361832" duration="15932000" />
       <workItem from="1544409130943" duration="756000" />
+      <workItem from="1544671263928" duration="2283000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Algorithm">
       <created>1544601303984</created>
@@ -385,7 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544601303984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Replace int with INT32">
+      <created>1544601869097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544601869099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Generally Done The Work">
+      <created>1544712453243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544712453243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -394,7 +361,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44446000" />
+    <option name="totallyTimeSpent" value="72485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,26 +374,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20176893" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1509121" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32860824" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.2248954" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.2248954" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.37575758" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.375" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32969698" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298969" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32860824" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -446,7 +414,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modified Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified Algorithm" />
+    <MESSAGE value="Replace int with INT32" />
+    <MESSAGE value="Generally Done The Work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generally Done The Work" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -465,7 +435,11 @@
     <entry file="file://$PROJECT_DIR$/frontend/jni/ColoredGraph.cpp" />
     <entry file="file://$PROJECT_DIR$/frontend/Input.h" />
     <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/Input.h" />
     <entry file="file://$PROJECT_DIR$/backend/Hello.cpp" />
@@ -478,10 +452,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JTextPane.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/Graphics.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/ColoredGraph.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -501,41 +489,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="241" column="18" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="18" />
+        <state relative-caret-position="3795">
+          <caret line="253" column="18" selection-start-line="253" selection-start-column="18" selection-end-line="253" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
+    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input_COLOR.h" />
+    <entry file="file://$PROJECT_DIR$/CGFrontend/hs_err_pid15448.log" />
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/Color.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="195">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
+            <element signature="method#visitColor#0;class#Input#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2304">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
