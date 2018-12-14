@@ -6,6 +6,9 @@ import javax.swing.*;
 
 public class Input {
 
+    public static final int VEXDISTANCE = 100;
+    public static final int VEXRADIUS = 11;
+
     public static final int MAXLEN = 10;
 
     public static int vex_num;
@@ -174,8 +177,8 @@ class VisualGraph extends JLabel {
          *  Drawing Colored Vertices
          */
         for (i = 0; i < Input.vex_num; i++) {
-            double X = 50 * Math.cos((i + 1) * 2 * Math.PI / 10) + x;
-            double Y = 50 * Math.sin((i + 1) * 2 * Math.PI / 10) + y;
+            double X = Input.VEXDISTANCE * Math.cos((i + 1) * 2 * Math.PI / Input.vex_num) + x;
+            double Y = Input.VEXDISTANCE * Math.sin((i + 1) * 2 * Math.PI / Input.vex_num) + y;
             g.setColor(Input.visitColor(Input.params, (i + 1)));
             ;
             g.fillOval((int) X, (int) Y, 11, 11);
@@ -212,11 +215,11 @@ class VisualGraph extends JLabel {
         for (i = 0; i < Input.vex_num; i++) {
             for (j = 0; j < Input.vex_num; j++) {
                 if (reconstruct_matrix[i][j] == 1 && i != j) {
-                    double X = 50 * Math.cos((i + 1) * 2 * Math.PI / 10) + x;
-                    double Y = 50 * Math.sin((i + 1) * 2 * Math.PI / 10) + y;
+                    double X = Input.VEXDISTANCE * Math.cos((i + 1) * 2 * Math.PI / Input.vex_num) + x;
+                    double Y = Input.VEXDISTANCE * Math.sin((i + 1) * 2 * Math.PI / Input.vex_num) + y;
 
-                    double X2 = 50 * Math.cos((j + 1) * 2 * Math.PI / 10) + x;
-                    double Y2 = 50 * Math.sin((j + 1) * 2 * Math.PI / 10) + y;
+                    double X2 = Input.VEXDISTANCE * Math.cos((j + 1) * 2 * Math.PI / Input.vex_num) + x;
+                    double Y2 = Input.VEXDISTANCE * Math.sin((j + 1) * 2 * Math.PI / Input.vex_num) + y;
                     g.setColor(Color.BLACK);
 
                     g.drawLine((int) (X + 6.5), (int) (Y + 6.5), (int) (X2 + 6.5), (int) (Y2 + 6.5));
