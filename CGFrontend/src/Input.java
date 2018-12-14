@@ -219,7 +219,7 @@ class VisualGraph extends JLabel {
                     double Y2 = 50 * Math.sin((j + 1) * 2 * Math.PI / 10) + y;
                     g.setColor(Color.BLACK);
 
-                    g.drawLine((int) X, (int) Y, (int) X2, (int) Y2);
+                    g.drawLine((int) (X + 6.5), (int) (Y + 6.5), (int) (X2 + 6.5), (int) (Y2 + 6.5));
                 }
             }
         }
