@@ -58,5 +58,5 @@ Step7:
 1. 最大颜色数为10， 留待改进。
 2. 顶点最大数为10， 留待改进。
 
-
+![RESULTS](https://github.com/Tilltu/ColoredGraph/raw/master/assets/CG.png)
 
