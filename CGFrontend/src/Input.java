@@ -145,7 +145,7 @@ public class Input {
             frame.setVisible(true);
             Thread.sleep(1000);
 
-            JOptionPane.showMessageDialog(null, header);
+            JOptionPane.showMessageDialog(frame, header);
 
 
         } catch (Exception e) {

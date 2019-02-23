@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="378c3f5a-5606-422e-baef-877c556da027" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGFrontend/src/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGFrontend/src/Input.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,37 +63,38 @@
     <session id="-1519936014">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="19" />
           <entry key="cpp" value="1959" />
-          <entry key="h" value="1583" />
-          <entry key="java" value="6336" />
-          <entry key="txt" value="73" />
+          <entry key="h" value="1617" />
+          <entry key="java" value="6339" />
+          <entry key="txt" value="112" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C++" value="2285" />
-          <entry key="JAVA" value="6336" />
+          <entry key="C++" value="2319" />
+          <entry key="JAVA" value="6339" />
           <entry key="ObjectiveC" value="1276" />
-          <entry key="PLAIN_TEXT" value="73" />
+          <entry key="PLAIN_TEXT" value="112" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="10" />
+          <entry key="class" value="12" />
           <entry key="cpp" value="9" />
-          <entry key="h" value="15" />
+          <entry key="h" value="16" />
           <entry key="iml" value="2" />
           <entry key="log" value="1" />
           <entry key="xml" value="10" />
@@ -99,8 +102,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C++" value="23" />
-          <entry key="CLASS" value="10" />
+          <entry key="C++" value="24" />
+          <entry key="CLASS" value="12" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="ObjectiveC" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -114,12 +117,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="221" column="98" selection-start-line="221" selection-start-column="98" selection-end-line="221" selection-end-column="98" />
+            <state relative-caret-position="-763">
+              <caret line="147" column="47" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/VisualGraph.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#visitColor#0;class#Input#0" />
+                <element signature="e#0#2350#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1821" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="16" selection-start-column="49" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -127,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+            <state relative-caret-position="-195">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -136,8 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="-165">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -187,11 +213,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="148" />
-    <option name="y" value="24" />
-    <option name="width" value="640" />
-    <option name="height" value="508" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="201" />
+    <option name="y" value="48" />
+    <option name="width" value="729" />
+    <option name="height" value="614" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -205,11 +231,6 @@
             <path>
               <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="ColoredGraph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ColoredGraph" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
@@ -255,6 +276,13 @@
               <item name="CGFrontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ColoredGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ColoredGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="CGFrontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Input.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -266,7 +294,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/parallels/ColoredGraph/CGFrontend/jniBackend/PaintMap.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544712130445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550914008174" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -297,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CG">
     <configuration name="CG" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Input" />
       <module name="ColoredGraph" />
@@ -307,6 +335,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Input" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Input" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CG" />
+      <item itemvalue="Application.Input" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Input" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -325,6 +368,8 @@
       <workItem from="1544287361832" duration="15932000" />
       <workItem from="1544409130943" duration="756000" />
       <workItem from="1544671263928" duration="2283000" />
+      <workItem from="1545289598884" duration="142000" />
+      <workItem from="1546001559509" duration="6140000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Algorithm">
       <created>1544601303984</created>
@@ -347,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544781876728</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reallocate vertices' coordinates">
+      <created>1544804553750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544804553750</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -356,7 +408,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74732000" />
+    <option name="totallyTimeSpent" value="85913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,21 +421,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2054176" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21143717" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32860824" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32848486" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.26804122" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.19716495" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.375" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -411,7 +462,8 @@
     <MESSAGE value="Modified Algorithm" />
     <MESSAGE value="Replace int with INT32" />
     <MESSAGE value="Fix coordinate issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix coordinate issue" />
+    <MESSAGE value="Reallocate vertices' coordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reallocate vertices' coordinates" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -429,9 +481,6 @@
     <entry file="file://$PROJECT_DIR$/jni/Input.h" />
     <entry file="file://$PROJECT_DIR$/frontend/jni/ColoredGraph.cpp" />
     <entry file="file://$PROJECT_DIR$/frontend/Input.h" />
-    <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/Input.h" />
     <entry file="file://$PROJECT_DIR$/backend/Hello.cpp" />
     <entry file="file://$PROJECT_DIR$/backend/print.cpp" />
@@ -494,35 +543,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
+    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" selection-start-line="16" selection-start-column="49" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="-165">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Print.cpp">
+    <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/VisualGraph.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state>
+          <folding>
+            <element signature="e#0#2350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGFrontend/out/production/ColoredGraph/Input.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1821" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/Input.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="16" selection-start-column="49" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/jniBackend/PaintMap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+        <state relative-caret-position="-195">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGFrontend/src/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="221" column="98" selection-start-line="221" selection-start-column="98" selection-end-line="221" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visitColor#0;class#Input#0" />
-          </folding>
+        <state relative-caret-position="-763">
+          <caret line="147" column="47" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
         </state>
       </provider>
     </entry>

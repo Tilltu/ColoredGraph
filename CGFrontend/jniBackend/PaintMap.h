@@ -114,7 +114,7 @@ class PaintMap {
 
 protected:
     INT32 matrix[MaxLen][MaxLen];  //邻接矩阵，0表示不连接，1表示连接
-    INT32 colors[MaxLen];          //颜色数组，表示每个点的着色情况，0为未着色，n表示着第n种颜色
+
     Vertex vertices[MaxLen];      //vertex array
     INT32 vexNum;                  //图的点数
     INT32 colorNum;                //最小着色数
@@ -158,12 +158,9 @@ public:
         colornode[8].color = "grey";
         colornode[9].color = "pink";
 
-
         INT32 i, j;
 
-
-
-        vertices[0].color = colornode[0].color;
+        vertices[0].color = colornode[0].color;      //Color the first vertex
         counter.push_back(vertices[0].color);
         for (i = 1; i < vexNum; i++) {
             for (j = 0; j < vexNum; j++) {
@@ -172,7 +169,6 @@ public:
                     if (res != "null") {
                         occupyExistingColor(res);
                     }
-
                 }
             }
             vertices[i].color = colornode[getNearestColor()].color;
@@ -186,9 +182,7 @@ public:
         colorNum = static_cast<INT32> (counter.size());
 
         string result = "";
-
         for (i = 0; i < vexNum; i++) {
-            //string portion =  "Vertex " + to_string(i + 1) + "'s Color Is " + vertices[i].color + "\n";
             string portion;
 
             if (i != vexNum - 1) {
@@ -199,11 +193,7 @@ public:
 
             result+=portion;
         }
-
-        //cout << result;
-
         return result;
-
     }
 
 
